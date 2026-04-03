@@ -1,0 +1,416 @@
+body {
+    background-image: url("background_main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black; /*als Fallback, falls das Bild nicht lädt*/
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0%);
+    color: rgba(255, 0, 255);
+    padding: 15px 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgba(255, 0, 255);
+}
+
+
+.nav-links a {
+  color:rgba(255, 0, 255);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  letter-spacing: 6px;
+  transition: letter-spacing 0.4s ease;
+  color: rgb(255, 136, 255);
+}
+
+.logo {
+  font-family: 'Grand hotel', cursive;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.card-main-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 350px;
+}
+
+.card-latest-entries {
+  font-family: 'Lato', sans-serif;
+  color: rgb(255, 136, 255);
+  width: 500px;
+  height: 200px;
+  translate: -6px -6px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid rgb(255, 217, 255);
+  box-shadow: 12px 12px 0 rgba(105, 19, 122, 0.8);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.head-latest-entries {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(243, 255, 79);
+  border-bottom: 3px solid rgb(255, 217, 255);
+}
+
+.content-latest-entries {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-latest-entries:hover {
+  translate: -6px;
+}
+
+.card-average-mind {
+  font-family: 'Lato', sans-serif;
+  color: rgb(255, 136, 255);
+  width: 500px;
+  height: 200px;
+  translate: -6px -6px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid rgb(255, 217, 255);
+  box-shadow: 12px 12px 0 rgba(105, 19, 122, 0.8);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.head-average-mind {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(243, 255, 79);
+  border-bottom: 3px solid rgb(255, 217, 255);
+}
+
+.content-average-mind {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-average-mind:hover {
+  translate: -6px;
+}
+
+.headline1 {
+    color: rgb(243, 255, 79);
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 80px;
+    margin: 40px 120px;
+    font-weight: 100;
+}
+
+.card-input-entries {
+  font-family: 'Lato', sans-serif;
+  color: rgb(255, 136, 255);
+  width: 800px;
+  height: 300px;
+  translate: -6px -6px;
+  background: rgba(81, 6, 81, 0.4);
+  border: 3px solid rgb(255, 217, 255);
+  box-shadow: 12px 12px 0 rgba(105, 19, 122, 0.8);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.textinput-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+#journal-input {
+  background-color: rgba(81, 6, 81, 0.4);
+  color: rgb(255, 217, 255);
+  border-style: bold;
+  border-radius: 4px;
+  border-width: 4px;
+  border-color: rgb(255, 217, 255);
+  font-family: 'Lato', sans-serif;
+}
+
+.card-input-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-input-entries {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(243, 255, 79);
+  border-bottom: 3px solid rgb(255, 217, 255);
+}
+
+.content-input-entries {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-input-entries:hover {
+  translate: -6px;
+}
+
+.button-journal {
+  position: relative;
+  margin: 0px 350px;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(243, 255, 79);
+  transition: all 0.2s ease;
+}
+
+.button-journal:active {
+  transform: scale(0.96);
+}
+
+.button-journal:before,
+.button-journal:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.button-journal:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, rgb(255, 136, 255) 20%, transparent 30%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, rgb(255, 136, 255) 15%, transparent 20%),
+    radial-gradient(circle, rgb(243, 255, 79) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(243, 255, 79) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.button-journal:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(243, 255, 79) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, rgb(255, 136, 255) 15%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(243, 255, 79) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.div-form {
+  margin: 40px 80px;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.div-frage {
+  background-color: rgba(81, 6, 81, 0.4);
+  border-color: rgb(255, 217, 255);
+  border-style: outset;
+}
+
+.div-frage p {
+  padding: 0px 40px;
+  font-size: 24px;
+  color: rgb(255, 136, 255);
+  font-weight: bold;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+.div-antwort {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.radio-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: rgb(250, 255, 178);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+input {
+  accent-color: rgb(243, 255, 79);
+}
+
+.div-button-tracking {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.button-tracking {
+  position: relative;
+  height: 40px;
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(243, 255, 79);
+  transition: all 0.2s ease;
+}
+
+.button-tracking:active {
+  transform: scale(0.96);
+}
+
+.button-tracking:before,
+.button-tracking:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.button-tracking:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, rgb(255, 136, 255) 20%, transparent 30%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, rgb(255, 136, 255) 15%, transparent 20%),
+    radial-gradient(circle, rgb(243, 255, 79) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(243, 255, 79) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+.button-tracking:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(243, 255, 79) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, rgb(255, 136, 255) 15%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%),
+    radial-gradient(circle, rgb(243, 255, 79) 20%, transparent 20%),
+    radial-gradient(circle, rgb(255, 136, 255) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
