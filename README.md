@@ -25,5 +25,10 @@ mindnote is a small full-stack web application that lets you log your daily well
  
 This is one of my first independent projects. I am currently teaching myself web development from scratch — using online resources, tutorials and AI tools — with the goal of transitioning into a career in software development through a vocational retraining program. The concept, structure and design of mindnote are entirely my own.
 
+## Screenshots 
+![Startseite](Screenshots/mindnote-startseite.PNG)
+![Journal](Screenshots/mindnote-journal.PNG)
+![Tracking](Screenshots/mindnote-tracking.PNG)
+![Tracking](Screenshots/mindnote-tracking2.PNG) 
 
 
