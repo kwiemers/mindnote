@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+require_once 'config.php';
 
 //holt Journal-Text aus POST-Request + Fallback auf leeren Strink falls nicht gesetzt
 //trim entfernt Leerzeichen/Zeilenumbrüche am Anfang und Ende  

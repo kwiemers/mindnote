@@ -15,7 +15,7 @@
 <body>
 
     <?php
-    require_once 'db.php';
+    require_once 'config.php';
 
     $stmt = $pdo->query("SELECT text, date FROM mindnote_journal_db ORDER BY date DESC LIMIT 1");
     $letzterEintrag = $stmt->fetch(PDO::FETCH_ASSOC);

@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+require_once 'config.php';
 
 //Liest jeden radio button aus POST aus 
 //isset prüft ob Wert gesendet wurde (ob radio checked ist)
